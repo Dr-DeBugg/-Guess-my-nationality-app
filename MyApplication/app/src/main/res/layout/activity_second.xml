@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Guess my nationality"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toTopOf="@+id/editTextPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextPersonName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="What's your first name?"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/textViewIntro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHeader" />
+
+            <TextView
+                android:id="@+id/textViewIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewFlagBig"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
+
+
+            <TextView
+                android:layout_marginEnd="3dp"
+                android:id="@+id/textViewResult1"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewResult2"
+                app:layout_constraintEnd_toStartOf="@+id/barrier2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFlagBig" />
+
+            <TextView
+                android:layout_marginEnd="3dp"
+                android:id="@+id/textViewResult2"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewResult3"
+                app:layout_constraintEnd_toStartOf="@+id/barrier2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewResult1" />
+
+            <TextView
+                android:layout_marginEnd="3dp"
+                android:id="@+id/textViewResult3"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/spinner1"
+                app:layout_constraintEnd_toStartOf="@+id/barrier2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewResult2" />
+
+            <ImageView
+                android:id="@+id/imageViewFlag2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewFlag3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/barrier2"
+                app:srcCompat="?attr/selectableItemBackground" />
+
+
+            <ImageView
+                android:id="@+id/imageViewFlag1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewFlag2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/barrier2"
+                app:srcCompat="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/imageViewFlag3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="113dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/barrier2"
+                app:srcCompat="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/imageViewFlagBig"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewResult1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewIntro" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewResult3" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="end"
+                app:constraint_referenced_ids="spinner1"
+                tools:layout_editor_absoluteX="558dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
