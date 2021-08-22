@@ -3,7 +3,7 @@
 ![Demo run](https://github.com/Dr-DeBugg/-Guess-my-nationality-app/blob/main/animation.gif)
 'Guess my nationality' Android app - created with Android Studio
 
-Installation guide:
+# Installation guide:
  1) Open Android Studio
  2) Go to File --> New --> Import Project and select MyApplication(from this repos Project folder)
  3) Select 'Run app' or Shift+F10
